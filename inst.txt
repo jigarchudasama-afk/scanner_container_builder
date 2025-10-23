@@ -1,6 +1,0 @@
-sudo podman run \
-  --rm \
-  -it \
-  --add-host=host.containers.internal:host-gateway \
-  -v /opt/mount:/opt/mount:Z \
-  security-scans:4.0
