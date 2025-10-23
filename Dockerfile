@@ -1,7 +1,7 @@
 # Dockerfile
 FROM registry.access.redhat.com/ubi8/ubi:latest
 
-LABEL maintainer="JIGAR"
+LABEL maintainer="jigar.chudasama@motorolasolutions.com"
 LABEL description="SSH-based STIG and OpenSCAP scanner."
 
 # Install only the client tools needed.
@@ -30,4 +30,5 @@ COPY security_scans_wrapper.sh .
 RUN chmod +x *.sh
 
 # Set the wrapper script as the default command to run
+
 CMD ["/app/security_scans_wrapper.sh"]
